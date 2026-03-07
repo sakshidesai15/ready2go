@@ -31,7 +31,13 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-4 gap-16 mb-24">
           <div className="col-span-1 lg:col-span-1">
-            <Logo className="mb-10" />
+            <div className="flex items-center gap-3 mb-6">
+              <Logo />
+              <div className="leading-tight">
+                <p className="text-lg font-bold text-white">Ready2Go Overseas</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-white/60">Consultancy</p>
+              </div>
+            </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-10">
               Ready2Go Overseas is a boutique visa and immigration consultancy focused on personalized guidance, transparent timelines, and compliant documentation.
             </p>
