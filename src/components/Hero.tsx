@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Star, Send } from 'lucide-react';
 
 export const Hero = () => {
@@ -23,19 +24,19 @@ export const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 bg-brand-blue/10 px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-brand-blue/10 px-4 py-2 rounded-full mb-6 reveal-up">
               <Star className="w-4 h-4 text-brand-orange fill-brand-orange" />
               <span className="text-brand-blue text-xs font-bold uppercase tracking-widest">Trusted Overseas Partner</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-6">
+            <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-6 reveal-up">
               Ready2Go Overseas <br />
               <span className="text-brand-orange">Study. Work. Settle.</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
+            <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl reveal-up">
               Plan your global journey with clarity. We guide students, professionals, and families through every visa milestone with transparent advice and hands-on support.
             </p>
             
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 mb-10 group hover:border-brand-orange transition-colors">
+            <div className="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 mb-10 group hover:border-brand-orange transition-colors soft-shadow">
               <h4 className="text-brand-blue font-bold mb-2 uppercase tracking-wider flex items-center gap-2">
                 <span className="w-2 h-2 bg-brand-orange rounded-full"></span>
                 Your Personal Visa Roadmap
@@ -45,13 +46,17 @@ export const Hero = () => {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-brand-blue text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-orange transition-all shadow-lg shadow-brand-blue/20">
-                Explore Services
-              </button>
-              <button className="bg-white text-brand-blue border-2 border-brand-blue px-8 py-4 rounded-xl font-bold hover:bg-brand-blue hover:text-white transition-all">
-                Meet Our Experts
-              </button>
+            <div className="flex flex-wrap gap-4 reveal-up">
+              <Link to="/services">
+                <button className="bg-brand-blue text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-orange transition-all shadow-lg shadow-brand-blue/20">
+                  Explore Services
+                </button>
+              </Link>
+              <Link to="/contact">
+                <button className="bg-white text-brand-blue border-2 border-brand-blue px-8 py-4 rounded-xl font-bold hover:bg-brand-blue hover:text-white transition-all">
+                  Meet Our Experts
+                </button>
+              </Link>
             </div>
           </motion.div>
 
@@ -59,7 +64,7 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl border border-slate-100 relative"
+            className="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl border border-slate-100 relative float-slow"
           >
             <div className="absolute -top-6 -right-6 w-24 h-24 bg-brand-orange/10 rounded-full blur-2xl"></div>
             <h3 className="text-3xl font-bold text-slate-900 mb-2">Free Visa Assessment</h3>
