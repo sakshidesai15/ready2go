@@ -15,11 +15,11 @@ export const ReferralCTA = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Know someone planning to go abroad?</h2>
             <p className="text-xl text-white/80 max-w-xl">
-              Refer friends or family to Ready2Go Overseas and receive exclusive rewards for every successful application.
+              Refer friends or family to Ready2Go Overseas Consultancy and receive exclusive rewards for every successful application.
             </p>
           </div>
           <Link to="/referral">
-            <button className="bg-white text-brand-blue px-10 py-5 rounded-2xl font-bold text-xl hover:bg-brand-orange hover:text-white transition-all flex items-center gap-3 group shadow-xl">
+            <button className="bg-brand-orange text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-brand-blue transition-all flex items-center gap-3 group shadow-xl">
               Start Referring <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </button>
           </Link>

@@ -34,8 +34,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 mb-1">Call Us</h4>
-                  <p className="text-slate-500">+91 98470 55221</p>
-                  <p className="text-slate-500">+91 98470 55222</p>
+                  <p className="text-slate-500">+91 77025 58704</p>
                 </div>
               </div>
               <div className="flex gap-6">
@@ -54,8 +53,9 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 mb-1">Visit Us</h4>
-                  <p className="text-slate-500">5th Floor, Horizon Towers</p>
-                  <p className="text-slate-500">Kochi, Kerala 682018</p>
+                  <p className="text-slate-500">F-16, Ground Floor, \u201cGayathri Towers\u201d</p>
+                  <p className="text-slate-500">Main Road, Green Hills Colony, Kothapet, Saroornagar Mandal</p>
+                  <p className="text-slate-500">Ranga Reddy District, Telangana \u2013 500035</p>
                 </div>
               </div>
             </div>
@@ -113,8 +113,8 @@ export const Contact = () => {
                   className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue outline-none transition-all resize-none"
                 ></textarea>
               </div>
-              <button className="w-full bg-brand-blue text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-blue/90 transition-all flex items-center justify-center gap-3 shadow-lg shadow-brand-blue/20 group">
-                Send Message
+              <button className="w-full bg-brand-orange text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-blue transition-all flex items-center justify-center gap-3 shadow-lg shadow-brand-orange/20 group">
+                Book Free Consultation
                 <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
             </form>

@@ -68,7 +68,7 @@ export const Services = () => {
                 <p className="text-slate-500 text-sm leading-relaxed mb-10">
                   {service.description}
                 </p>
-                <Link to={service.link} className="inline-flex items-center justify-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-orange transition-all group-hover:shadow-lg active:scale-95">
+                <Link to={service.link} className="inline-flex items-center justify-center gap-2 bg-brand-orange text-white px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-blue transition-all group-hover:shadow-lg active:scale-95">
                   Read More <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -79,4 +79,3 @@ export const Services = () => {
     </section>
   );
 };
-

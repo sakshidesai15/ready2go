@@ -6,7 +6,7 @@ export const FloatingContact = () => {
   return (
     <div className="fixed bottom-8 right-8 z-[100] flex flex-col gap-4">
       <motion.a
-        href="https://wa.me/919847055221"
+        href="https://wa.me/917702558704?text=Hello%20Ready2Go%20Overseas%20Consultancy%2C%0AI%20want%20information%20about%20study%20abroad.%0APlease%20guide%20me."
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}

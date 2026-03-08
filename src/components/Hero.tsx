@@ -29,8 +29,7 @@ export const Hero = () => {
               <span className="text-brand-blue text-xs font-bold uppercase tracking-widest">Trusted Overseas Partner</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-6 reveal-up">
-              Ready2Go Overseas <br />
-              <span className="text-brand-orange">Study. Work. Settle.</span>
+              Start your global journey with expert visa guidance.
             </h1>
             <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl reveal-up">
               Plan your global journey with clarity. We guide students, professionals, and families through every visa milestone with transparent advice and hands-on support.
@@ -48,12 +47,12 @@ export const Hero = () => {
 
             <div className="flex flex-wrap gap-4 reveal-up">
               <Link to="/services">
-                <button className="bg-brand-blue text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-orange transition-all shadow-lg shadow-brand-blue/20">
+                <button className="bg-brand-orange text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-blue transition-all shadow-lg shadow-brand-orange/20">
                   Explore Services
                 </button>
               </Link>
               <Link to="/contact">
-                <button className="bg-white text-brand-blue border-2 border-brand-blue px-8 py-4 rounded-xl font-bold hover:bg-brand-blue hover:text-white transition-all">
+                <button className="bg-brand-orange text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-blue transition-all shadow-lg shadow-brand-orange/20">
                   Meet Our Experts
                 </button>
               </Link>
@@ -67,7 +66,7 @@ export const Hero = () => {
             className="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl border border-slate-100 relative float-slow"
           >
             <div className="absolute -top-6 -right-6 w-24 h-24 bg-brand-orange/10 rounded-full blur-2xl"></div>
-            <h3 className="text-3xl font-bold text-slate-900 mb-2">Free Visa Assessment</h3>
+            <h3 className="text-3xl font-bold text-slate-900 mb-2">Book Free Consultation</h3>
             <p className="text-slate-500 mb-8">Tell us your goal and we will respond within one business day.</p>
             
             <form className="space-y-4">
@@ -94,7 +93,7 @@ export const Hero = () => {
                 <option>Family Sponsorship</option>
               </select>
               <button className="w-full bg-brand-orange text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-blue transition-all flex items-center justify-center gap-3 group">
-                Request Callback
+                Book Free Consultation
                 <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </button>
             </form>

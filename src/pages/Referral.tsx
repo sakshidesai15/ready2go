@@ -127,7 +127,7 @@ export const Referral = () => {
                   <input type="email" placeholder="Email Address" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue outline-none" />
                   <input type="tel" placeholder="Phone Number" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue outline-none" />
                   <textarea placeholder="Tell us why you'd like to join our referral program" rows={4} className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue outline-none resize-none"></textarea>
-                  <button className="w-full bg-brand-blue text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-orange transition-all shadow-lg shadow-brand-blue/20">
+                  <button className="w-full bg-brand-orange text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-blue transition-all shadow-lg shadow-brand-orange/20">
                     Register Now
                   </button>
                 </form>
@@ -146,7 +146,7 @@ export const Referral = () => {
               "Referral bonus is paid only after the referred client successfully initiates their visa process.",
               "There is no limit to the number of referrals you can make.",
               "Referral rewards are subject to verification by our team.",
-              "The program is open to all existing and new partners of Ready2Go Overseas."
+              "The program is open to all existing and new partners of Ready2Go Overseas Consultancy."
             ].map((term, i) => (
               <div key={i} className="flex gap-4 items-start">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-1" />

@@ -70,8 +70,8 @@ export const Process = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <button className="bg-brand-orange text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white hover:text-brand-blue transition-all shadow-2xl shadow-brand-orange/20 uppercase tracking-widest">
-            Start Your Assessment
+          <button className="bg-brand-orange text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-brand-blue transition-all shadow-2xl shadow-brand-orange/20 uppercase tracking-widest">
+            Book Free Consultation
           </button>
         </div>
       </div>

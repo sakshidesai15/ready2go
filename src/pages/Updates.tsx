@@ -139,8 +139,8 @@ export const Updates = () => {
                 onClick={() => setPage(pageNumber)}
                 className={`w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all ${
                   page === pageNumber
-                    ? 'bg-brand-blue text-white'
-                    : 'bg-slate-100 text-slate-600 hover:bg-brand-orange hover:text-white'
+                    ? 'bg-brand-orange text-white'
+                    : 'bg-brand-orange/20 text-brand-blue hover:bg-brand-blue hover:text-white'
                 }`}
               >
                 {pageNumber}

@@ -23,9 +23,9 @@ export const Contact = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-12 mb-20">
             {[
-              { title: "Call Us", info: "+91 98470 55221", sub: "Mon-Sat, 9am-7pm", icon: Phone, color: "bg-blue-50 text-brand-blue" },
+              { title: "Call Us", info: "+91 77025 58704", sub: "Mon-Sat, 9am-7pm", icon: Phone, color: "bg-blue-50 text-brand-blue" },
               { title: "Email Us", info: "hello@ready2gooverseas.com", sub: "24/7 Support", icon: Mail, color: "bg-orange-50 text-brand-orange" },
-              { title: "Visit Us", info: "Horizon Towers, MG Road", sub: "Kochi, India", icon: MapPin, color: "bg-emerald-50 text-emerald-600" }
+              { title: "Visit Us", info: "F-16, Ground Floor, \u201cGayathri Towers\u201d", sub: "Main Road, Green Hills Colony, Kothapet, Saroornagar Mandal, Ranga Reddy District, Telangana \u2013 500035", icon: MapPin, color: "bg-emerald-50 text-emerald-600" }
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -99,8 +99,8 @@ export const Contact = () => {
                     className="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-blue outline-none transition-all resize-none"
                   ></textarea>
                 </div>
-                <button className="w-full bg-brand-blue text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-orange transition-all flex items-center justify-center gap-3 shadow-lg shadow-brand-blue/20 group">
-                  Send Message
+                <button className="w-full bg-brand-orange text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-blue transition-all flex items-center justify-center gap-3 shadow-lg shadow-brand-orange/20 group">
+                  Book Free Consultation
                   <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </button>
               </form>
@@ -116,7 +116,7 @@ export const Contact = () => {
                 <h3 className="text-3xl font-bold text-slate-900 mb-8">Our Location</h3>
                 <div className="w-full h-[400px] rounded-[3rem] overflow-hidden shadow-xl border-8 border-white">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.428236202405!2d-73.985428!3d40.748441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a147!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1647234567890!5m2!1sen!2sus" 
+                    src="https://www.google.com/maps?q=F-16%2C%20Ground%20Floor%2C%20Gayathri%20Towers%2C%20Main%20Road%2C%20Green%20Hills%20Colony%2C%20Kothapet%2C%20Saroornagar%20Mandal%2C%20Ranga%20Reddy%20District%2C%20Telangana%20500035&output=embed" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 

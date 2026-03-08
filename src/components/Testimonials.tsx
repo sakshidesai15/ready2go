@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Aarav Mehta",
     role: "Student Visa - Canada",
-    text: "The Ready2Go team helped me shortlist universities and build a strong visa file. I felt confident at every step.",
+    text: "The Ready2Go Overseas Consultancy team helped me shortlist universities and build a strong visa file. I felt confident at every step.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
     rating: 5
   },

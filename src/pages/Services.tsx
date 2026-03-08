@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { GraduationCap, Briefcase, Plane, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { GraduationCap, Briefcase, Plane, MapPin, ArrowRight, CheckCircle2, FileText, Award } from 'lucide-react';
 
 const detailedServices = [
   {
@@ -10,6 +10,46 @@ const detailedServices = [
     color: "bg-blue-50 text-brand-blue",
     image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80&w=1000",
     features: ["University Shortlisting", "SOP & LOR Support", "Visa Interview Prep", "Scholarship Guidance"]
+  },
+  {
+    title: "Student Visa",
+    description: "End-to-end student visa support with eligibility checks, document preparation, and submission guidance.",
+    icon: GraduationCap,
+    color: "bg-sky-50 text-sky-700",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000",
+    features: ["Eligibility Assessment", "Document Checklist", "Financial Guidance", "Embassy Submission"]
+  },
+  {
+    title: "Work Visa",
+    description: "Secure your overseas role with compliant filings, employer coordination, and timeline planning.",
+    icon: Briefcase,
+    color: "bg-amber-50 text-amber-700",
+    image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=1000",
+    features: ["Role Alignment", "Employer Documents", "Application Filing", "Post-Approval Steps"]
+  },
+  {
+    title: "Tourist Visa",
+    description: "Get travel-ready with itinerary planning, financial proof guidance, and quick turnarounds.",
+    icon: Plane,
+    color: "bg-emerald-50 text-emerald-600",
+    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1000",
+    features: ["Itinerary Planning", "Funds Proof", "Hotel & Flight Support", "Fast-Track Filing"]
+  },
+  {
+    title: "SOP / LOR Guidance",
+    description: "Craft compelling SOPs and LORs aligned with university expectations and visa requirements.",
+    icon: FileText,
+    color: "bg-indigo-50 text-indigo-700",
+    image: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&q=80&w=1000",
+    features: ["Story Structuring", "Editing & Review", "University Alignment", "Final Proofing"]
+  },
+  {
+    title: "Scholarship Assistance",
+    description: "Identify scholarships and build strong applications with timelines, essays, and document support.",
+    icon: Award,
+    color: "bg-rose-50 text-rose-700",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1000",
+    features: ["Scholarship Shortlisting", "Essay Support", "Document Prep", "Deadline Tracking"]
   },
   {
     title: "Skilled Migration",
@@ -55,46 +95,51 @@ export const Services = () => {
       </section>
 
       <section className="section-padding bg-white">
-        <div className="max-w-7xl mx-auto space-y-32">
-          {detailedServices.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className={`grid lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
-            >
-              <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                <div className={`w-16 h-16 rounded-2xl ${service.color} flex items-center justify-center mb-8`}>
-                  <service.icon className="w-8 h-8" />
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {detailedServices.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-white rounded-[2rem] border border-slate-100 shadow-lg overflow-hidden flex flex-col h-full"
+              >
+                <div className="relative">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-44 object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/50 via-transparent to-transparent"></div>
                 </div>
-                <h2 className="text-4xl font-bold text-slate-900 mb-6">{service.title}</h2>
-                <p className="text-slate-600 text-lg leading-relaxed mb-8">
-                  {service.description}
-                </p>
-                <div className="grid sm:grid-cols-2 gap-4 mb-10">
-                  {service.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-brand-orange" />
-                      <span className="text-slate-700 font-medium">{feature}</span>
+                <div className="p-6 flex flex-col h-full">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className={`w-12 h-12 rounded-2xl ${service.color} flex items-center justify-center`}>
+                      <service.icon className="w-6 h-6" />
                     </div>
-                  ))}
+                    <h2 className="text-xl font-bold text-slate-900">{service.title}</h2>
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    {service.description}
+                  </p>
+                  <div className="grid grid-cols-1 gap-2 mb-6">
+                    {service.features.slice(0, 3).map((feature, i) => (
+                      <div key={i} className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-brand-orange" />
+                        <span className="text-slate-700 text-sm">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <button className="mt-auto bg-brand-orange text-white px-5 py-3 rounded-full font-bold text-sm hover:bg-brand-blue transition-all flex items-center gap-2 group">
+                    Book Free Consultation <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </button>
                 </div>
-                <button className="bg-brand-blue text-white px-8 py-4 rounded-full font-bold hover:bg-brand-orange transition-all flex items-center gap-2 group">
-                  Enquire Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </div>
-              <div className={`relative ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-brand-orange/10 rounded-full blur-3xl -z-10"></div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     </div>

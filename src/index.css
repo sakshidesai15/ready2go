@@ -5,11 +5,12 @@
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Playfair Display", serif;
   
-  --color-brand-blue: #1f6b3b;
-  --color-brand-orange: #f0b429;
-  --color-brand-dark: #0b1f14;
-  --color-brand-cream: #f6f2e9;
-  --color-brand-ink: #0f1a12;
+  --color-brand-blue: #0b2e5e;
+  --color-brand-orange: #f68b1e;
+  --color-brand-sky: #8ec9f3;
+  --color-brand-dark: #0b1a2e;
+  --color-brand-cream: #f5f8fc;
+  --color-brand-ink: #0a1424;
 }
 
 @layer base {
@@ -20,9 +21,9 @@
   body {
     @apply font-sans text-brand-dark bg-slate-50;
     background-image:
-      radial-gradient(circle at 12% 12%, rgba(240, 180, 41, 0.16), transparent 38%),
-      radial-gradient(circle at 88% 18%, rgba(31, 107, 59, 0.14), transparent 42%),
-      linear-gradient(180deg, #f8fafc 0%, #ffffff 45%, #f8fafc 100%);
+      radial-gradient(circle at 12% 12%, rgba(246, 139, 30, 0.18), transparent 38%),
+      radial-gradient(circle at 88% 18%, rgba(142, 201, 243, 0.2), transparent 42%),
+      linear-gradient(180deg, #f5f8fc 0%, #ffffff 45%, #eef5ff 100%);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
@@ -32,8 +33,8 @@
   }
 
   ::selection {
-    background: rgba(240, 180, 41, 0.5);
-    color: #0b1f14;
+    background: rgba(246, 139, 30, 0.4);
+    color: #0b1a2e;
   }
 }
 
@@ -46,7 +47,7 @@
 }
 
 .section-title {
-  @apply text-brand-orange font-bold tracking-[0.4em] uppercase text-xs;
+  @apply text-brand-blue font-bold tracking-[0.4em] uppercase text-xs;
 }
 
 .float-slow {

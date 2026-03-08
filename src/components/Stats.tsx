@@ -3,10 +3,10 @@ import { motion } from 'motion/react';
 import { Users, Award, Globe, Briefcase } from 'lucide-react';
 
 const stats = [
-  { label: "Applications Filed", value: "8,500+", icon: Users, color: "text-blue-600" },
-  { label: "Document Accuracy", value: "99.2%", icon: Award, color: "text-orange-600" },
-  { label: "Destination Countries", value: "12+", icon: Globe, color: "text-emerald-600" },
-  { label: "Years of Guidance", value: "12+", icon: Briefcase, color: "text-purple-600" }
+  { label: "Students Guided", value: "500+", icon: Users, color: "text-blue-600" },
+  { label: "Destination Countries", value: "20+", icon: Globe, color: "text-emerald-600" },
+  { label: "Visa Success Rate", value: "95%", icon: Award, color: "text-orange-600" },
+  { label: "University Tie-ups", value: "300+", icon: Briefcase, color: "text-purple-600" }
 ];
 
 export const Stats = () => {

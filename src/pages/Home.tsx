@@ -10,12 +10,14 @@ import { Stats } from '../components/Stats';
 import { Testimonials } from '../components/Testimonials';
 import { Partners } from '../components/Partners';
 import { ReferralCTA } from '../components/ReferralCTA';
+import { TrustElements } from '../components/TrustElements';
 
 export const Home = () => {
   return (
     <>
       <Hero />
       <Partners />
+      <TrustElements />
       <Services />
       <Countries />
       <Stats />
