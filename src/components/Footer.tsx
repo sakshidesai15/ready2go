@@ -14,6 +14,7 @@ export const Footer = () => {
     { name: 'Our Services', href: '/services' },
     { name: 'Application Process', href: '/process' },
     { name: 'Latest Updates', href: '/updates' },
+    { name: 'Gallery', href: '/gallery' },
     { name: 'Contact Us', href: '/contact' },
   ];
 

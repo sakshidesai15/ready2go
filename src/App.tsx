@@ -9,6 +9,7 @@ import { Process } from './pages/Process';
 import { Updates } from './pages/Updates';
 import { Contact } from './pages/Contact';
 import { Referral } from './pages/Referral';
+import { Gallery } from './pages/Gallery';
 import { FloatingContact } from './components/FloatingContact';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/process" element={<Process />} />
             <Route path="/updates" element={<Updates />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/referral" element={<Referral />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

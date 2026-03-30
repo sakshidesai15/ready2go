@@ -28,6 +28,7 @@ export const Navbar = () => {
     { name: 'Services', href: '/services' },
     { name: 'Process', href: '/process' },
     { name: 'Updates', href: '/updates' },
+    { name: 'Gallery', href: '/gallery' },
     { name: 'Referral', href: '/referral' },
     { name: 'Contact', href: '/contact' },
   ];

@@ -1,22 +1,33 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import photo18 from '../assets/PHOTOS/Untitled design (18).png';
+import photo21 from '../assets/PHOTOS/Untitled design (21).png';
+import photo22 from '../assets/PHOTOS/Untitled design (22).png';
+import photo23 from '../assets/PHOTOS/Untitled design (23).png';
+import photo24 from '../assets/PHOTOS/Untitled design (24).png';
+import photo25 from '../assets/PHOTOS/Untitled design (25).png';
+import photo26 from '../assets/PHOTOS/Untitled design (26).png';
+import photo27 from '../assets/PHOTOS/Untitled design (27).png';
+import photo28 from '../assets/PHOTOS/Untitled design (28).png';
+import photo29 from '../assets/PHOTOS/Untitled design (29).png';
+import photo30 from '../assets/PHOTOS/Untitled design (30).png';
+import photo31 from '../assets/PHOTOS/Untitled design (31).png';
+import photo32 from '../assets/PHOTOS/Untitled design (32).png';
 
-const trustPhotos = [
-  {
-    title: "Visa Success Photos",
-    image: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&q=80&w=1200",
-    note: "Happy student visa approvals"
-  },
-  {
-    title: "Student Visa Stamping",
-    image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
-    note: "Stamped and ready to fly"
-  },
-  {
-    title: "Office Photos",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
-    note: "Consultation space and advisors"
-  }
+const visaSuccessPhotos = [
+  photo18,
+  photo21,
+  photo22,
+  photo23,
+  photo24,
+  photo25,
+  photo26,
+  photo27,
+  photo28,
+  photo29,
+  photo30,
+  photo31,
+  photo32
 ];
 
 const universityLogos = [
@@ -42,37 +53,26 @@ export const TrustElements = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {trustPhotos.map((item, index) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group h-full"
-            >
-              <div className="rounded-[2rem] overflow-hidden border border-slate-100 shadow-lg bg-slate-50 h-full flex flex-col">
-                <div className="relative">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-44 md:h-52 object-cover group-hover:scale-[1.02] transition-transform duration-500"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/60 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                    <p className="text-xs text-white/80">{item.note}</p>
-                  </div>
-                </div>
-                <div className="px-4 py-4 flex items-center gap-3 text-xs text-slate-500 mt-auto">
-                  <span className="w-2 h-2 rounded-full bg-brand-orange"></span>
-                  Verified moments from our journey
-                </div>
-              </div>
-            </motion.div>
-          ))}
+        <div className="mb-10">
+          <h3 className="text-2xl font-bold text-brand-blue mb-4">Visa Success Photos</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {visaSuccessPhotos.map((photo, index) => (
+              <motion.div
+                key={`${photo}-${index}`}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.03 }}
+                className="rounded-2xl overflow-hidden border border-slate-100 shadow-md bg-white"
+              >
+                <img
+                  src={photo}
+                  alt={`Visa success ${index + 1}`}
+                  className="w-full h-40 md:h-44 object-cover"
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         <div className="mt-12">
