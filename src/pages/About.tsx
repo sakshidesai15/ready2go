@@ -90,22 +90,46 @@ export const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Expertise</h2>
-            <h3 className="text-4xl font-bold text-slate-900 mb-6">Decades of Combined Experience</h3>
+            <h3 className="text-4xl font-bold text-slate-900 mb-6">8+ Years of Experience</h3>
+            <p className="text-slate-600 max-w-2xl mx-auto text-lg">
+              Our team combines years of practical consulting experience with a structured, client-first approach that keeps every application moving with clarity.
+            </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Legal Compliance", desc: "Deep understanding of international immigration laws and policies.", icon: Award },
-              { title: "Profile Evaluation", desc: "Rigorous assessment to ensure the highest probability of visa success.", icon: CheckCircle },
-              { title: "Global Network", desc: "Strong partnerships with universities and employers worldwide.", icon: Award }
-            ].map((item, i) => (
-              <div key={i} className="text-center p-8">
-                <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <item.icon className="w-8 h-8 text-brand-blue" />
+          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-8 items-stretch">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-brand-blue text-white rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(246,139,30,0.28),transparent_36%),radial-gradient(circle_at_bottom_left,rgba(142,201,243,0.22),transparent_28%)]" />
+              <div className="relative z-10">
+                <p className="text-white/70 text-sm font-bold uppercase tracking-[0.3em] mb-4">Experience Snapshot</p>
+                <div className="flex items-end gap-4 mb-6">
+                  <span className="text-7xl md:text-8xl font-bold text-brand-orange leading-none">8+</span>
+                  <span className="text-xl md:text-2xl font-semibold pb-3">Years supporting overseas journeys</span>
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h4>
-                <p className="text-slate-500 leading-relaxed">{item.desc}</p>
+                <p className="text-white/80 leading-relaxed text-lg">
+                  We focus on trustworthy advice, document accuracy, and consistent follow-through so students and families can move ahead with confidence.
+                </p>
               </div>
-            ))}
+            </motion.div>
+
+            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
+              {[
+                { title: "Legal Compliance", desc: "Deep understanding of international immigration laws and policies.", icon: Award },
+                { title: "Profile Evaluation", desc: "Rigorous assessment to ensure the highest probability of visa success.", icon: CheckCircle },
+                { title: "Global Network", desc: "Strong partnerships with universities and employers worldwide.", icon: Award }
+              ].map((item, i) => (
+                <div key={i} className="text-center p-8 bg-slate-50 rounded-[2rem] border border-slate-100 shadow-sm">
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                    <item.icon className="w-8 h-8 text-brand-blue" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h4>
+                  <p className="text-slate-500 leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

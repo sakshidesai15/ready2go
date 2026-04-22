@@ -9,12 +9,15 @@ import { Contact as ContactSection } from '../components/Contact';
 import { Stats } from '../components/Stats';
 import { Testimonials } from '../components/Testimonials';
 import { Partners } from '../components/Partners';
+import { ExperienceHighlight } from '../components/ExperienceHighlight';
+import { EducationLoanPartners } from '../components/EducationLoanPartners';
 import { ReferralCTA } from '../components/ReferralCTA';
 
 export const Home = () => {
   return (
     <>
       <Hero />
+      <ExperienceHighlight />
       <Partners />
       <section className="py-12 bg-white border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
@@ -35,6 +38,7 @@ export const Home = () => {
       <Countries />
       <Stats />
       <WhyChooseUs />
+      <EducationLoanPartners />
       <ReferralCTA />
       <ProcessSection />
       <Testimonials />

@@ -6,28 +6,37 @@ export const Referral = () => {
   const steps = [
     {
       icon: Share2,
-      title: "Share Your Link",
-      description: "Share your unique referral code or link with friends and family who are looking for visa services.",
-      color: "bg-blue-50 text-brand-blue"
+      title: 'Share Your Link',
+      description: 'Share your unique referral code or link with friends and family who are looking for visa services.',
+      color: 'bg-blue-50 text-brand-blue',
     },
     {
       icon: Users,
-      title: "They Register",
-      description: "Your friend signs up for any of our visa services using your referral link or code.",
-      color: "bg-orange-50 text-brand-orange"
+      title: 'They Register',
+      description: 'Your friend signs up for any of our visa services using your referral link or code.',
+      color: 'bg-orange-50 text-brand-orange',
     },
     {
       icon: Wallet,
-      title: "Get Rewarded",
-      description: "Once their visa process is successfully initiated, you receive your referral bonus directly.",
-      color: "bg-emerald-50 text-emerald-600"
-    }
+      title: 'Get Rewarded',
+      description: 'Once their visa process is successfully initiated, you receive your referral bonus directly.',
+      color: 'bg-emerald-50 text-emerald-600',
+    },
   ];
 
-  const rewards = [
-    { type: "Student Visa", amount: "₹5,000", perk: "Per successful enrollment" },
-    { type: "Work Visa", amount: "₹3,000", perk: "Per successful application" },
-    { type: "Tourist Visa", amount: "₹1,000", perk: "Per successful processing" }
+  const benefits = [
+    {
+      title: 'Student Visa',
+      description: 'Per successful enrollment',
+    },
+    {
+      title: 'Work Visa',
+      description: 'Per successful application',
+    },
+    {
+      title: 'Tourist Visa',
+      description: 'Per successful processing',
+    },
   ];
 
   return (
@@ -35,23 +44,23 @@ export const Referral = () => {
       {/* Hero Section */}
       <section className="bg-brand-blue py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img 
-            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=2000" 
-            alt="Referral background" 
+          <img
+            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=2000"
+            alt="Referral background"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
         </div>
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-6">
               <Gift className="w-4 h-4 text-brand-orange" />
               <span className="text-white text-xs font-bold uppercase tracking-widest">Refer & Earn Program</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">Spread the Word, <br /><span className="text-brand-orange">Earn Rewards</span></h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+              Spread the Word, <br />
+              <span className="text-brand-orange">Earn Rewards</span>
+            </h1>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
               Help your friends achieve their global dreams and get rewarded for every successful referral.
             </p>
@@ -93,7 +102,7 @@ export const Referral = () => {
         </div>
       </section>
 
-      {/* Rewards Table */}
+      {/* Program Benefits */}
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -104,13 +113,13 @@ export const Referral = () => {
                 We value your trust and recommendations. Our referral program is designed to reward you for helping others find the right guidance for their visa journey.
               </p>
               <div className="space-y-4">
-                {rewards.map((reward, i) => (
-                  <div key={i} className="flex items-center justify-between p-6 bg-white rounded-2xl shadow-sm border border-slate-100">
+                {benefits.map((benefit) => (
+                  <div key={benefit.title} className="flex items-center justify-between p-6 bg-white rounded-2xl shadow-sm border border-slate-100">
                     <div>
-                      <h5 className="font-bold text-slate-900">{reward.type}</h5>
-                      <p className="text-sm text-slate-500">{reward.perk}</p>
+                      <h5 className="font-bold text-slate-900">{benefit.title}</h5>
+                      <p className="text-sm text-slate-500">{benefit.description}</p>
                     </div>
-                    <div className="text-2xl font-bold text-brand-orange">{reward.amount}</div>
+                    <CheckCircle2 className="w-6 h-6 text-brand-orange" />
                   </div>
                 ))}
               </div>
@@ -143,10 +152,10 @@ export const Referral = () => {
           <h3 className="text-2xl font-bold text-slate-900 mb-8">Program Terms & Conditions</h3>
           <div className="space-y-4 text-left">
             {[
-              "Referral bonus is paid only after the referred client successfully initiates their visa process.",
-              "There is no limit to the number of referrals you can make.",
-              "Referral rewards are subject to verification by our team.",
-              "The program is open to all existing and new partners of Ready2Go Overseas Consultancy."
+              'Referral bonus is paid only after the referred client successfully initiates their visa process.',
+              'There is no limit to the number of referrals you can make.',
+              'Referral rewards are subject to verification by our team.',
+              'The program is open to all existing and new partners of Ready2Go Overseas Consultancy.',
             ].map((term, i) => (
               <div key={i} className="flex gap-4 items-start">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-1" />
