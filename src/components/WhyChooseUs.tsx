@@ -76,7 +76,7 @@ export const WhyChooseUs = () => {
               />
             </div>
             <div className="absolute -bottom-10 -left-10 bg-brand-blue text-white p-8 rounded-3xl shadow-xl z-20 hidden md:block">
-              <p className="text-4xl font-bold mb-1">12+</p>
+              <p className="text-4xl font-bold mb-1">8+</p>
               <p className="text-sm font-medium opacity-80 uppercase tracking-wider">Years of Expertise</p>
             </div>
             <div className="absolute top-1/2 right-0 w-64 h-64 bg-brand-orange/10 rounded-full blur-3xl -z-10"></div>
