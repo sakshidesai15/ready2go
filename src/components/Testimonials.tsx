@@ -12,6 +12,28 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
+    name: 'Aarav Mehta',
+    role: 'Student Visa - Canada',
+    text:
+      'The Ready2Go Overseas Consultancy team helped me shortlist universities and build a strong visa file. I felt confident at every step.',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
+    name: 'Riya Sharma',
+    role: 'Skilled Migration - Australia',
+    text: 'Clear timelines, clean documentation, and fast responses. Their advisors were always two steps ahead.',
+    image: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
+    name: 'Daniel Cruz',
+    role: 'Visitor Visa - UK',
+    text: 'They reviewed every detail of my documents and explained the process in plain language. Highly recommended.',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
     name: 'Shaik Rahul',
     role: 'Local Guide - 10 reviews - 10 photos',
     text:
