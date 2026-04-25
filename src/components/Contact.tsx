@@ -43,8 +43,8 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 mb-1">Email Us</h4>
-                  <p className="text-slate-500">hello@ready2gooverseas.com</p>
-                  <p className="text-slate-500">support@ready2gooverseas.com</p>
+                  <p className="text-slate-500">info@ready2gooverseas.com</p>
+                  <p className="text-slate-500">info@ready2gooverseas.com</p>
                 </div>
               </div>
               <div className="flex gap-6">

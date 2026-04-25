@@ -24,7 +24,7 @@ export const Contact = () => {
           <div className="grid lg:grid-cols-3 gap-12 mb-20">
             {[
               { title: "Call Us", info: "+91 77025 58704", sub: "Mon-Sat, 9am-7pm", icon: Phone, color: "bg-blue-50 text-brand-blue" },
-              { title: "Email Us", info: "hello@ready2gooverseas.com", sub: "24/7 Support", icon: Mail, color: "bg-orange-50 text-brand-orange" },
+              { title: "Email Us", info: "info@ready2gooverseas.com", sub: "24/7 Support", icon: Mail, color: "bg-orange-50 text-brand-orange" },
               { title: "Visit Us", info: "F-16, Ground Floor, \u201cGayathri Towers\u201d", sub: "Main Road, Green Hills Colony, Kothapet, Saroornagar Mandal, Ranga Reddy District, Telangana \u2013 500035", icon: MapPin, color: "bg-emerald-50 text-emerald-600" }
             ].map((item, i) => (
               <motion.div
