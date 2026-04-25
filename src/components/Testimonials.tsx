@@ -33,6 +33,27 @@ const testimonials: Testimonial[] = [
     rating: 5,
   },
   {
+    name: 'Shaik Rahul',
+    role: 'Local Guide',
+    text: 'Great place for student visa support. The management is supportive and creates a positive, motivating environment.',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
+    name: 'regulagadda mani',
+    role: '5 reviews',
+    text: 'My UK journey started here. The process went smoothly, and I am very happy with the support I received.',
+    image: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
+    name: 'ramakrishna',
+    role: '1 review',
+    text: 'Excellent service. The entire visa process for me and my wife was handled properly with continuous support.',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
     name: 'Preethi goud',
     role: '2 reviews',
     text: 'After two previous rejections for my mother, I contacted Mr. Naresh and everything went smoothly. Very happy with the result.',
@@ -53,7 +74,7 @@ export const Testimonials = () => {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-3xl grid-cols-1 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={`${testimonial.name}-${index}`}
@@ -61,7 +82,7 @@ export const Testimonials = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06 }}
-              className="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-slate-100 relative group hover:shadow-xl transition-all"
+              className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 relative group hover:shadow-xl transition-all"
             >
               <div className="absolute top-8 right-8 text-slate-100 group-hover:text-brand-orange/20 transition-colors">
                 <Quote className="w-12 h-12" />
