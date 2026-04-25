@@ -89,7 +89,7 @@ export const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={`${testimonial.name}-${index}`}
@@ -97,7 +97,7 @@ export const Testimonials = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06 }}
-              className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 relative group hover:shadow-xl transition-all"
+              className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 relative group hover:shadow-xl transition-all h-full min-h-[430px] flex flex-col"
             >
               <div className="absolute top-8 right-8 text-slate-100 group-hover:text-brand-orange/20 transition-colors">
                 <Quote className="w-12 h-12" />
@@ -109,9 +109,19 @@ export const Testimonials = () => {
                 ))}
               </div>
 
-              <p className="text-slate-600 leading-relaxed mb-6 italic">"{testimonial.text}"</p>
+              <p
+                className="text-slate-600 leading-relaxed mb-6 italic flex-1"
+                style={{
+                  display: '-webkit-box',
+                  WebkitBoxOrient: 'vertical',
+                  WebkitLineClamp: 5,
+                  overflow: 'hidden',
+                }}
+              >
+                "{testimonial.text}"
+              </p>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 mt-auto">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
