@@ -8,10 +8,6 @@ type Testimonial = {
   text: string;
   image: string;
   rating: number;
-  reply?: {
-    author: string;
-    text: string;
-  };
 };
 
 const testimonials: Testimonial[] = [
@@ -29,14 +25,6 @@ const testimonials: Testimonial[] = [
     text:
       'My achievement to be in uk was started by naresh sir ... my process went very smoothly n now i am gonna be graduated my may of 2026 .. soo happy n Thank you soo much for a smooth process sir .',
     image: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&q=80&w=200',
-    rating: 5,
-  },
-  {
-    name: 'Ready2Go Overseas Consultancy',
-    role: 'Owner Reply',
-    text:
-      'Thank you so much for your kind words! We are really happy to be part of your UK journey. Wishing you all the best for your graduation in May 2026. Always here to support you!',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200',
     rating: 5,
   },
   {
@@ -62,11 +50,6 @@ const testimonials: Testimonial[] = [
       'I had a fantastic experience with Naresh! The entire visa process was handled smoothly from start to finish, with no stress or complications. Everything was well-organized, transparent, and efficient, which made the whole journey completely ...More',
     image: 'https://images.unsplash.com/photo-1502323777036-f29e3972d82f?auto=format&fit=crop&q=80&w=200',
     rating: 5,
-    reply: {
-      author: 'Ready2Go Overseas Consultancy',
-      text:
-        'Thank you, Divya Garu, for your valuable feedback! We are glad you had a hassle-free experience with us. Your trust and recommendation mean a lot. Best wishes for your future!',
-    },
   },
   {
     name: 'Moghal Rahamath',
@@ -91,11 +74,6 @@ const testimonials: Testimonial[] = [
       'I am super happy to share my experience with Ready2Go Overseas consultancy as I already faced two visit visa rejections for my mother with different consultancy. I contacted Mr. Naresh and everything went smooth with him and my mother ...More',
     image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=200',
     rating: 5,
-    reply: {
-      author: 'Ready2Go Overseas Consultancy',
-      text:
-        'Thank you so much, Preethi, for your kind words and trust in Ready2Go Overseas Consultancy. We are very happy to hear that your mother received her visa successfully. Your satisfaction means a lot to us. We always try our best to provide genuine guidance and smooth service for every client. Wishing you and your family all the best for the journey ahead. Thank you again for recommending us.',
-    },
   },
 ];
 
@@ -132,15 +110,6 @@ export const Testimonials = () => {
               </div>
 
               <p className="text-slate-600 leading-relaxed mb-6 italic">"{testimonial.text}"</p>
-
-              {testimonial.reply ? (
-                <div className="mb-6 rounded-2xl bg-slate-50 border border-slate-100 p-4">
-                  <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-blue mb-2">
-                    {testimonial.reply.author}
-                  </p>
-                  <p className="text-sm text-slate-600 leading-relaxed">{testimonial.reply.text}</p>
-                </div>
-              ) : null}
 
               <div className="flex items-center gap-4">
                 <img
