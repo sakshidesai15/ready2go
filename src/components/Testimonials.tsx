@@ -12,6 +12,13 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
+    name: 'Chithram Abhinav',
+    role: '1 review',
+    text: 'Best consultancy for students.',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
     name: 'Aarav Mehta',
     role: 'Student Visa, Canada',
     text: 'The team helped me shortlist universities and build a strong visa file. I felt confident at every step.',
@@ -58,6 +65,21 @@ const testimonials: Testimonial[] = [
     role: '2 reviews',
     text: 'After two previous rejections for my mother, I contacted Mr. Naresh and everything went smoothly. Very happy with the result.',
     image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
+    name: 'Muni Prasad',
+    role: 'Local Guide - 21 reviews - 8 photos',
+    text: 'Outstanding service. Naresh was incredibly helpful, fast, and had excellent communication.',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200',
+    rating: 5,
+  },
+  {
+    name: 'Divya M',
+    role: '4 reviews',
+    text:
+      'I had a fantastic experience with Naresh! The entire visa process was handled smoothly from start to finish, with no stress or complications. Everything was well-organized, transparent, and efficient, which made the whole journey completely hassle-free. Naresh was professional, supportive, and always available to answer questions, making me feel confident throughout the process. I truly appreciate the dedication and attention to detail. Highly recommended for anyone looking for a reliable and seamless visa service!',
+    image: 'https://images.unsplash.com/photo-1502323777036-f29e3972d82f?auto=format&fit=crop&q=80&w=200',
     rating: 5,
   },
 ];
