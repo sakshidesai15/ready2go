@@ -12,13 +12,6 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: 'Chithram Abhinav',
-    role: '1 review',
-    text: 'Best consultancy for students.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
-    rating: 5,
-  },
-  {
     name: 'Aarav Mehta',
     role: 'Student Visa, Canada',
     text: 'The team helped me shortlist universities and build a strong visa file. I felt confident at every step.',
