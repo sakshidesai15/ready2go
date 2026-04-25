@@ -1,19 +1,17 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import australiaImage from '../assets/images/austrelia.png';
-import irelandImage from '../assets/images/ireland.png';
-import singaporeImage from '../assets/images/sinagpore.png';
+import { countryImages } from '../data/countryImages';
 
 const countries = [
-  { name: "United States", code: "US", image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=800" },
-  { name: "Canada", code: "CA", image: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&q=80&w=800" },
-  { name: "United Kingdom", code: "UK", image: "https://images.unsplash.com/photo-1488747279002-c8523379faaa?auto=format&fit=crop&q=80&w=800" },
-  { name: "Australia", code: "AU", image: australiaImage },
-  { name: "New Zealand", code: "NZ", image: "https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&q=80&w=800" },
-  { name: "Germany", code: "DE", image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=800" },
-  { name: "Ireland", code: "IE", image: irelandImage },
-  { name: "UAE", code: "AE", image: "https://images.unsplash.com/photo-1498496294664-d9372eb521f3?auto=format&fit=crop&q=80&w=800" },
-  { name: "Singapore", code: "SG", image: singaporeImage }
+  { name: "United States", code: "US", image: countryImages.usa },
+  { name: "Canada", code: "CA", image: countryImages.canada },
+  { name: "United Kingdom", code: "UK", image: countryImages.uk },
+  { name: "Australia", code: "AU", image: countryImages.australia },
+  { name: "New Zealand", code: "NZ", image: countryImages.newZealand },
+  { name: "Germany", code: "DE", image: countryImages.germany },
+  { name: "Ireland", code: "IE", image: countryImages.ireland },
+  { name: "UAE", code: "AE", image: countryImages.uae },
+  { name: "Singapore", code: "SG", image: countryImages.singapore }
 ];
 
 export const Countries = () => {

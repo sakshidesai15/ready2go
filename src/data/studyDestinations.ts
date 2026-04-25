@@ -1,7 +1,11 @@
+import { countryImages } from './countryImages';
+import asiaImage from '../assets/images/sinagpore.png';
+
 export type StudyDestinationKey =
   | 'usa'
   | 'canada'
   | 'uk'
+  | 'germany'
   | 'ireland'
   | 'australia'
   | 'new-zealand'
@@ -33,6 +37,7 @@ export const studyDestinationTabs: { key: StudyDestinationKey; label: string }[]
   { key: 'usa', label: 'USA' },
   { key: 'canada', label: 'Canada' },
   { key: 'uk', label: 'United Kingdom' },
+  { key: 'germany', label: 'Germany' },
   { key: 'ireland', label: 'Ireland' },
   { key: 'australia', label: 'Australia' },
   { key: 'new-zealand', label: 'New Zealand' },
@@ -45,7 +50,7 @@ export const studyDestinations: Record<StudyDestinationKey, StudyDestinationData
     title: 'Study in the USA',
     shortTitle: 'USA',
     slug: 'study-in-usa',
-    heroImage: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1600',
+    heroImage: countryImages.usa,
     tagline: "The United States of America has been a global leader in the field of education and boasts of a lion's share of top ranked universities according to all major international rankings. Few countries offer as many high ranked universities and noble laureate academia, as USA does.",
     overview:
       "The United States of America has been a global leader in the field of education and boasts of a lion's share of top ranked universities according to all major international rankings. Few countries offer as many high ranked universities and noble laureate academia, as USA does.",
@@ -94,7 +99,7 @@ export const studyDestinations: Record<StudyDestinationKey, StudyDestinationData
     title: 'Study in Canada',
     shortTitle: 'Canada',
     slug: 'study-in-canada',
-    heroImage: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&q=80&w=1600',
+    heroImage: countryImages.canada,
     tagline: "A country that offers a truly dynamic education system with some of the world's best universities, a high standard of living & a promising future, Canada is undoubtedly amongst the most popular and ideal study destinations in the world.",
     overview:
       "A country that offers a truly dynamic education system with some of the world's best universities, a high standard of living & a promising future, Canada is undoubtedly amongst the most popular and ideal study destinations in the world.",
@@ -143,7 +148,7 @@ export const studyDestinations: Record<StudyDestinationKey, StudyDestinationData
     title: 'Study in the United Kingdom',
     shortTitle: 'United Kingdom',
     slug: 'study-in-uk',
-    heroImage: 'https://images.unsplash.com/photo-1488747279002-c8523379faaa?auto=format&fit=crop&q=80&w=1600',
+    heroImage: countryImages.uk,
     tagline: "With an academic reputation built on centuries old heritage, The UK is home to some of the world's oldest universities that consistently rank among the highest in the world. Universities in UK have a rich legacy of welcoming international students for centuries and are known to offer an unforgettable student experience as they know the needs and aspirations of their students very well.",
     overview:
       "With an academic reputation built on centuries old heritage, The UK is home to some of the world's oldest universities that consistently rank among the highest in the world. Universities in UK have a rich legacy of welcoming international students for centuries and are known to offer an unforgettable student experience as they know the needs and aspirations of their students very well.",
@@ -188,11 +193,60 @@ export const studyDestinations: Record<StudyDestinationKey, StudyDestinationData
       note: "Master's programs are often shorter, which can reduce total cost.",
     },
   },
+  germany: {
+    title: 'Study in Germany',
+    shortTitle: 'Germany',
+    slug: 'study-in-germany',
+    heroImage: countryImages.germany,
+    tagline: 'Germany is a top study destination known for world-class universities, affordable tuition at public institutions, and strong pathways into engineering, research, and technology careers.',
+    overview:
+      'Germany is a top study destination known for world-class universities, affordable tuition at public institutions, and strong pathways into engineering, research, and technology careers.',
+    quickFacts: [
+      'Many public universities offer very low or no tuition fees',
+      'Strong reputation in engineering, technology, and applied sciences',
+      'Large number of English-taught programs at master\'s level',
+      'Excellent internship and research opportunities',
+      'Access to Europe-wide career and travel opportunities',
+    ],
+    whyStudy: [
+      'Study in one of Europe\'s most respected higher education systems.',
+      'Benefit from affordable tuition and strong academic value.',
+      'Build experience through research projects and industry connections.',
+      'Explore a multicultural environment with a strong economy.',
+    ],
+    topUniversities: [
+      'Technical University of Munich',
+      'Ludwig Maximilian University of Munich',
+      'Heidelberg University',
+      'RWTH Aachen University',
+      'Humboldt University of Berlin',
+      'University of Freiburg',
+    ],
+    popularCourses: ['Engineering', 'Automotive', 'Computer Science', 'Business', 'Data Science', 'Architecture'],
+    admissionProcess: [
+      'Choose a university and program that matches your academic background.',
+      'Prepare transcripts, language scores, motivation letter, and supporting documents.',
+      'Apply through the university portal or centralized application system where required.',
+      'Accept the offer and plan for enrollment and residence formalities.',
+    ],
+    visaProcess: [
+      'Receive your admission offer and arrange proof of funds.',
+      'Prepare health insurance, accommodation, and passport documents.',
+      'Apply for the German student visa or residence permit.',
+      'Travel after approval and complete local registration on arrival.',
+    ],
+    costAndScholarships: {
+      tuition: 'EUR 0 - 5,000 per year at many public institutions',
+      living: 'EUR 10,000 - 13,000 per year',
+      scholarship: 'DAAD scholarships and university funding options are widely available',
+      note: 'Living costs vary by city, with Munich and Berlin often higher than smaller cities.',
+    },
+  },
   ireland: {
     title: 'Study in Ireland',
     shortTitle: 'Ireland',
     slug: 'study-in-ireland',
-    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1600',
+    heroImage: countryImages.ireland,
     tagline: "Set yourself on a path of a global career with one of the world's most dynamic & advanced education systems. Foster your creativity & entrepreneurship in universities that are developing world class graduates to address challenges of today and the future.",
     overview:
       "Set yourself on a path of a global career with one of the world's most dynamic & advanced education systems. Foster your creativity & entrepreneurship in universities that are developing world class graduates to address challenges of today and the future.",
@@ -241,7 +295,7 @@ export const studyDestinations: Record<StudyDestinationKey, StudyDestinationData
     title: 'Study in Australia',
     shortTitle: 'Australia',
     slug: 'study-in-australia',
-    heroImage: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&q=80&w=1600',
+    heroImage: countryImages.australia,
     tagline: "A network of world leading universities, outstanding learning & research facilities, inspiring lectures from brilliant instructors & unparalleled academic excellence, Australian education system offers them all with an exceptional student experience & qualifications that are valued world over.",
     overview:
       "A network of world leading universities, outstanding learning & research facilities, inspiring lectures from brilliant instructors & unparalleled academic excellence, Australian education system offers them all with an exceptional student experience & qualifications that are valued world over.",
@@ -290,7 +344,7 @@ export const studyDestinations: Record<StudyDestinationKey, StudyDestinationData
     title: 'Study in New Zealand',
     shortTitle: 'New Zealand',
     slug: 'study-in-new-zealand',
-    heroImage: 'https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&q=80&w=1600',
+    heroImage: countryImages.newZealand,
     tagline: 'New Zealand offers world class education system, qualifications that are valued globally, an unmatchable lifestyle and friendly & welcoming natives. This island country has abundant natural beauty, breathtaking landscapes and picturesque coastlines that make studying in New Zealand an adventurous experience.',
     overview:
       'New Zealand offers world class education system, qualifications that are valued globally, an unmatchable lifestyle and friendly & welcoming natives. This island country has abundant natural beauty, breathtaking landscapes and picturesque coastlines that make studying in New Zealand an adventurous experience.',
@@ -339,7 +393,7 @@ export const studyDestinations: Record<StudyDestinationKey, StudyDestinationData
     title: 'Study in Europe',
     shortTitle: 'Europe',
     slug: 'study-in-europe',
-    heroImage: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=1600',
+    heroImage: countryImages.germany,
     tagline: "Home to thousands of universities and institutions, Europe has some of the world's strongest economies and offers excellent learning and research opportunities that make studying here a life changing & rewarding experience.",
     overview:
       "Home to thousands of universities and institutions, Europe has some of the world's strongest economies and offers excellent learning and research opportunities that make studying here a life changing & rewarding experience.",
@@ -388,7 +442,7 @@ export const studyDestinations: Record<StudyDestinationKey, StudyDestinationData
     title: 'Study in Asia',
     shortTitle: 'Asia',
     slug: 'study-in-asia',
-    heroImage: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&q=80&w=1600',
+    heroImage: asiaImage,
     tagline: 'Biggest continent in the world is increasingly becoming a global education powerhouse and a growing number of international students are choosing to study in Asia.',
     overview:
       'Biggest continent in the world is increasingly becoming a global education powerhouse and a growing number of international students are choosing to study in Asia.',
