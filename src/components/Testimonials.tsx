@@ -97,7 +97,7 @@ export const Testimonials = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06 }}
-              className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 relative group hover:shadow-xl transition-all h-full min-h-[430px] flex flex-col"
+              className="bg-white p-8 md:p-9 rounded-[2.5rem] shadow-sm border border-slate-100 relative group hover:shadow-xl transition-all h-full min-h-[320px] flex flex-col"
             >
               <div className="absolute top-8 right-8 text-slate-100 group-hover:text-brand-orange/20 transition-colors">
                 <Quote className="w-12 h-12" />
@@ -110,11 +110,11 @@ export const Testimonials = () => {
               </div>
 
               <p
-                className="text-slate-600 leading-relaxed mb-6 italic flex-1"
+                className="text-slate-600 leading-relaxed mb-6 italic"
                 style={{
                   display: '-webkit-box',
                   WebkitBoxOrient: 'vertical',
-                  WebkitLineClamp: 5,
+                  WebkitLineClamp: 4,
                   overflow: 'hidden',
                 }}
               >
