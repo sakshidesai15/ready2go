@@ -20,9 +20,9 @@ const testimonials: Testimonial[] = [
   },
   {
     name: 'Riya Sharma',
-    role: 'Skilled Migration, Australia',
+    role: '',
     text: 'Clear timelines, clean documentation, and fast responses. Their advisors were always two steps ahead.',
-    image: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&q=80&w=200',
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=200',
     rating: 5,
   },
   {
@@ -43,14 +43,14 @@ const testimonials: Testimonial[] = [
     name: 'regulagadda mani',
     role: '5 reviews',
     text: 'My UK journey started here. The process went smoothly, and I am very happy with the support I received.',
-    image: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&q=80&w=200',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200',
     rating: 5,
   },
   {
     name: 'ramakrishna',
     role: '1 review',
     text: 'Excellent service. The entire visa process for me and my wife was handled properly with continuous support.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
     rating: 5,
   },
   {
@@ -64,7 +64,7 @@ const testimonials: Testimonial[] = [
     name: 'Muni Prasad',
     role: 'Local Guide - 21 reviews - 8 photos',
     text: 'Outstanding service. Naresh was incredibly helpful, fast, and had excellent communication.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200',
     rating: 5,
   },
   {
@@ -130,7 +130,6 @@ export const Testimonials = () => {
                 />
                 <div>
                   <h4 className="font-bold text-slate-900">{testimonial.name}</h4>
-                  <p className="text-slate-400 text-xs font-medium uppercase tracking-wider">{testimonial.role}</p>
                 </div>
               </div>
             </motion.div>
