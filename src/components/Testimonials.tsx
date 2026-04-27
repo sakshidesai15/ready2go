@@ -6,73 +6,63 @@ type Testimonial = {
   name: string;
   role: string;
   text: string;
-  image: string;
   rating: number;
 };
 
 const testimonials: Testimonial[] = [
   {
-    name: 'Aarav Mehta',
+    name: 'Divya M',
+    role: '4 reviews',
+    text:
+      'I had a fantastic experience with Naresh! The entire visa process was handled smoothly from start to finish, with no stress or complications. Everything was well-organized, transparent, and efficient, which made the whole journey completely hassle-free. Naresh was professional, supportive, and always available to answer questions, making me feel confident throughout the process. I truly appreciate the dedication and attention to detail. Highly recommended for anyone looking for a reliable and seamless visa service!',
+    rating: 5,
+  },
+  {
+    name: 'Karthik R',
     role: 'Student Visa, Canada',
-    text: 'The team helped me shortlist universities and build a strong visa file. I felt confident at every step.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
+    text: 'My UK journey started here, and the education guidance was excellent. The team helped me with universities, documents, and every step of the visa process.',
     rating: 5,
   },
   {
-    name: 'Riya Sharma',
+    name: 'Priya S',
     role: '',
-    text: 'Clear timelines, clean documentation, and fast responses. Their advisors were always two steps ahead.',
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=200',
+    text: 'They made my education journey simple and stress-free. The support was clear, quick, and helpful throughout the entire visa process.',
     rating: 5,
   },
   {
-    name: 'Daniel Cruz',
+    name: 'Arun Kumar',
     role: 'Visitor Visa, UK',
-    text: 'They reviewed every detail of my documents and explained the process in plain language. Highly recommended.',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200',
-    rating: 5,
-  },
-  {
-    name: 'Shaik Rahul',
-    role: 'Local Guide',
-    text: 'Great place for student visa support. The management is supportive and creates a positive, motivating environment.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
-    rating: 5,
-  },
-  {
-    name: 'regulagadda mani',
-    role: '5 reviews',
-    text: 'My UK journey started here. The process went smoothly, and I am very happy with the support I received.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200',
+    text: 'Great support for my UK journey and education plans. The process was smooth, and I always felt guided in the right direction.',
     rating: 5,
   },
   {
     name: 'ramakrishna',
     role: '1 review',
     text: 'Excellent service. The entire visa process for me and my wife was handled properly with continuous support.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200',
-    rating: 5,
-  },
-  {
-    name: 'Preethi goud',
-    role: '2 reviews',
-    text: 'After two previous rejections for my mother, I contacted Mr. Naresh and everything went smoothly. Very happy with the result.',
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=200',
     rating: 5,
   },
   {
     name: 'Muni Prasad',
     role: 'Local Guide - 21 reviews - 8 photos',
     text: 'Outstanding service. Naresh was incredibly helpful, fast, and had excellent communication.',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200',
     rating: 5,
   },
   {
-    name: 'Divya M',
-    role: '4 reviews',
-    text:
-      'I had a fantastic experience with Naresh! The entire visa process was handled smoothly from start to finish, with no stress or complications. Everything was well-organized, transparent, and efficient, which made the whole journey completely hassle-free. Naresh was professional, supportive, and always available to answer questions, making me feel confident throughout the process. I truly appreciate the dedication and attention to detail. Highly recommended for anyone looking for a reliable and seamless visa service!',
-    image: 'https://images.unsplash.com/photo-1502323777036-f29e3972d82f?auto=format&fit=crop&q=80&w=200',
+    name: 'Preethi goud',
+    role: '2 reviews',
+    text: 'After two previous rejections for my mother, I contacted Mr. Naresh and everything went smoothly. Very happy with the result.',
+    rating: 5,
+  },
+  {
+    name: 'Shaik Rahul',
+    role: 'Local Guide',
+    text: 'Great place for student visa support. The management is supportive and creates a positive, motivating environment.',
+    rating: 5,
+  },
+  {
+    name: 'regulagadda mani',
+    role: '5 reviews',
+    text: 'My UK journey started here. The process went smoothly, and I am very happy with the support I received.',
     rating: 5,
   },
 ];
@@ -121,16 +111,8 @@ export const Testimonials = () => {
                 "{testimonial.text}"
               </p>
 
-              <div className="flex items-center gap-4 mt-auto">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
-                  referrerPolicy="no-referrer"
-                />
-                <div>
-                  <h4 className="font-bold text-slate-900">{testimonial.name}</h4>
-                </div>
+              <div className="mt-auto">
+                <h4 className="font-bold text-slate-900">{testimonial.name}</h4>
               </div>
             </motion.div>
           ))}
